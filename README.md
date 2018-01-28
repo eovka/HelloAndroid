@@ -5,7 +5,7 @@ The first project in Udacity’s Google Developer Challenge Scholarship: Android
 It’s scrollable – mostly to show everything in the landscape mode. In the portrait mode – it depends on a phone. At opening on my phone I cannot see the last sentence, when scrolling the card it’s a kind of surprise to see some additional information.
 
 Here is the screenshot (more in a adequate directory):
-https://github.com/eovka/HelloAndroid/blob/master/HelloAndroid-screenshots/HelloAndroid-Screenshot_20180128-123216.png
+https://github.com/eovka/HelloAndroid/blob/master/HelloAndroid-screenshots/HelloAndroid-Screenshot_20180128-211013.png
 
 And the xml code for a quick look:
 
@@ -20,17 +20,18 @@ And the xml code for a quick look:
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_weight="1"
+            android:contentDescription="@string/image_description"
             android:scaleType="centerCrop"
             android:src="@drawable/programming" />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -42,10 +43,11 @@ And the xml code for a quick look:
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/space12dp"
                 android:fontFamily="serif"
-                android:padding="16dp"
-                android:text="Learn online with"
+                android:paddingLeft="@dimen/space16dp"
+                android:paddingTop="@dimen/space28dp"
+                android:text="@string/learn_online"
                 android:textAlignment="textStart"
                 android:textColor="#101010"
                 android:textSize="14sp" />
@@ -53,33 +55,44 @@ And the xml code for a quick look:
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="@dimen/space12dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_toRightOf="@id/learn_text"
+                android:layout_marginRight="@dimen/space16dp"
+                android:layout_marginTop="@dimen/space12dp"
                 android:src="@drawable/udacity" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="serif"
             android:gravity="center"
-            android:paddingBottom="16dp"
-            android:paddingTop="16dp"
-            android:text="Udacity"
-            android:textColor="#ffffff"
+            android:paddingBottom="@dimen/space16dp"
+            android:paddingTop="@dimen/space16dp"
+            android:text="@string/udacity"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="24sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoLink="map"
             android:fontFamily="serif"
-            android:gravity="center"
-            android:paddingBottom="16dp"
-            android:text="2465 Latham St \nMountain View, CA 94043 \n650-555-5555"
-            android:textColor="#ffffff"
+            android:text="@string/udacity_address"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:paddingBottom="@dimen/space16dp"
+            android:text="@string/udacity_phone"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="14sp" />
 
         <TextView
@@ -89,10 +102,10 @@ And the xml code for a quick look:
             android:fontFamily="serif"
             android:gravity="center"
             android:linksClickable="true"
-            android:paddingBottom="16dp"
-            android:paddingLeft="16dp"
-            android:text="Learn more at www.udacity.com."
-            android:textColor="#ffffff"
+            android:paddingBottom="@dimen/space16dp"
+            android:paddingLeft="@dimen/space16dp"
+            android:text="@string/learn_more"
+            android:textColor="@color/colorPrimaryText"
             android:textSize="16sp" />
 
     </LinearLayout>
