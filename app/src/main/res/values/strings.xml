@@ -4,6 +4,7 @@
     <string name="learn_online">Learn online with </string>
     <string name="udacity">Udacity</string>
     <string name="udacity_address">2465 Latham St \nMountain View, CA 94043</string>
-    <string name="udacity_phone">650&#8211;555&#8211;5555</string>
+    <string name="udacity_phone">+1 650&#8211;555&#8211;5555</string>
     <string name="learn_more">Learn more at www.udacity.com.</string>
+    <string name="udacity_logo">the logo of Udacity</string>
 </resources>
