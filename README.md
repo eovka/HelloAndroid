@@ -7,8 +7,9 @@ It’s scrollable – mostly to show everything in the landscape mode. In the po
 Here is the screenshot (more in a adequate directory):
 https://github.com/eovka/HelloAndroid/blob/master/HelloAndroid-screenshots/HelloAndroid-Screenshot_20180128-211013.png
 
-And the xml code for a quick look:
+And the xml code for a quick look (note it's not the whole code - the first view, ScrollView, at the begining is missing, I don't know yet why the editor doesn't show it):
 
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
