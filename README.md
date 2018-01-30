@@ -9,7 +9,6 @@ https://github.com/eovka/HelloAndroid/blob/master/HelloAndroid-screenshots/Hello
 
 And the xml code for a quick look:
 
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
