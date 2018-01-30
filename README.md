@@ -4,11 +4,12 @@ The first project in Udacity’s Google Developer Challenge Scholarship: Android
 
 It’s scrollable – mostly to show everything in the landscape mode. In the portrait mode – it depends on a phone. At opening on my phone I cannot see the last sentence, when scrolling the card it’s a kind of surprise to see some additional information.
 
-Here is the screenshot (more in a adequate directory):
-https://github.com/eovka/HelloAndroid/blob/master/HelloAndroid-screenshots/HelloAndroid-Screenshot_20180128-211013.png
+Here is the newest screenshot (more in a adequate directory):
+<image src="https://github.com/eovka/HelloAndroid/blob/master/HelloAndroid-screenshots/HelloAndroid-20180130-081901.png">
 
-And the xml code for a quick look (note it's not the whole code - the first view, ScrollView, at the begining is missing, I don't know yet why the editor doesn't show it):
+And the xml code for a quick look:
 
+```
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -112,4 +113,4 @@ And the xml code for a quick look (note it's not the whole code - the first view
             android:textSize="@dimen/text_www" />
 
     </LinearLayout>
-</ScrollView>
+```
