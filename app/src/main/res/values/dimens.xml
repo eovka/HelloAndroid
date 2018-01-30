@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="space8dp">8dp</dimen>
     <dimen name="space16dp">16dp</dimen>
     <dimen name="space12dp">12dp</dimen>
     <dimen name="space28dp">28dp</dimen>
+    <dimen name="logo_size">48dp</dimen>
+    <dimen name="image_size">250dp</dimen>
+    <dimen name="text_normal">14sp</dimen>
+    <dimen name="text_www">16sp</dimen>
+    <dimen name="text_name">24sp</dimen>
 </resources>
