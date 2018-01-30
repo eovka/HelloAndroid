@@ -25,7 +25,7 @@ And the xml code for a quick look:
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="@dimen/image_size"
             android:layout_weight="1"
             android:contentDescription="@string/image_description"
             android:scaleType="centerCrop"
@@ -35,7 +35,7 @@ And the xml code for a quick look:
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#ffffff"
+            android:background="@color/colorPrimaryText"
             android:orientation="horizontal">
 
             <TextView
@@ -49,16 +49,17 @@ And the xml code for a quick look:
                 android:paddingTop="@dimen/space28dp"
                 android:text="@string/learn_online"
                 android:textAlignment="textStart"
-                android:textColor="#101010"
-                android:textSize="14sp" />
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/text_normal" />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="@dimen/logo_size"
                 android:layout_marginBottom="@dimen/space12dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/space8dp"
                 android:layout_marginRight="@dimen/space16dp"
                 android:layout_marginTop="@dimen/space12dp"
+                android:contentDescription="@string/udacity_logo"
                 android:src="@drawable/udacity" />
         </LinearLayout>
 
@@ -71,7 +72,8 @@ And the xml code for a quick look:
             android:paddingTop="@dimen/space16dp"
             android:text="@string/udacity"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="24sp" />
+            android:textSize="@dimen/text_name"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,18 +84,19 @@ And the xml code for a quick look:
             android:text="@string/udacity_address"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="14sp" />
+            android:textSize="@dimen/text_normal" />
 
         <TextView
             android:id="@+id/phone_number_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:autoLink="phone"
             android:fontFamily="serif"
             android:paddingBottom="@dimen/space16dp"
             android:text="@string/udacity_phone"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="14sp" />
+            android:textSize="@dimen/text_normal" />
 
         <TextView
             android:layout_width="match_parent"
@@ -106,7 +109,7 @@ And the xml code for a quick look:
             android:paddingLeft="@dimen/space16dp"
             android:text="@string/learn_more"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="16sp" />
+            android:textSize="@dimen/text_www" />
 
     </LinearLayout>
 </ScrollView>
